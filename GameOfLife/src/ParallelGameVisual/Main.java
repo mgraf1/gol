@@ -30,7 +30,7 @@ public class Main {
             System.exit(1);
         }
         
-        if (width > 0 == false && height > 0 == false && numSteps > 0 == false) {
+        if (width < 0 || height < 0 || numSteps < 0) {
             System.out.printf("Arguments must be positive.\n");
             System.exit(1);
         }
